@@ -35,7 +35,7 @@ namespace Zork
                         outputString = "Unknown command.";
                         break;
                 }
-console.WriteLine(outputString);
+Console.WriteLine(outputString);
             }
         }
         private static Commands ToCommand(string commandString) => (Enum.TryParse<Commands>(commandString, true, out Commands result) ? result : Commands.UNKNOWN);
